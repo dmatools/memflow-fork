@@ -213,6 +213,7 @@ impl<T: Seek + Read + Write + Send> PhysicalMemory for FileIoMemory<T> {
     }
 }
 
+#[cfg(feature = "plugins")]
 cglue_impl_group!(
     FileIoMemory<T: Read + Seek + Write + Send>,
     crate::plugins::ConnectorInstance,

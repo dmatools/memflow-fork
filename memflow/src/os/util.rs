@@ -144,6 +144,7 @@ pub fn module_import_list_callback(
     import_list_callback(mem, info.base, info.size, callback)
 }
 
+#[allow(unused_mut, unused_variables)]
 pub fn import_list_callback(
     mem: &mut impl MemoryView,
     base: Address,
@@ -266,6 +267,7 @@ pub fn module_export_list_callback(
     export_list_callback(mem, info.base, info.size, callback)
 }
 
+#[allow(unused_mut, unused_variables)]
 pub fn export_list_callback(
     mem: &mut impl MemoryView,
     base: Address,
@@ -389,6 +391,7 @@ pub fn module_section_list_callback(
     section_list_callback(mem, info.base, info.size, callback)
 }
 
+#[allow(unused_mut, unused_variables)]
 pub fn section_list_callback(
     mem: &mut impl MemoryView,
     base: Address,

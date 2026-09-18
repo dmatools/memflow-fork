@@ -11,7 +11,7 @@ use std::fmt;
 use std::prelude::v1::*;
 
 // those only required when compiling under std environment
-#[cfg(feature = "std")]
+#[cfg(feature = "memmapfiles")]
 use crate::error::{Error, ErrorKind, ErrorOrigin, Result};
 
 /// The `MemoryMap`struct provides a mechanism to map addresses from the linear address space
